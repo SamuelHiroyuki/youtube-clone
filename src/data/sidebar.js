@@ -28,31 +28,27 @@ export default {
 	main: [
 		{
 			title: "Início",
-			icon: <Home style={{ ...style, fill: "#f00" }} />,
-			info: null
+			icon: <Home style={{ ...style, fill: "#f00" }} />
 		},
-		{ title: "Em alta", icon: <Fire style={style} />, info: null },
-		{ title: "Inscrições", icon: <Subs style={style} />, info: null },
-		{ title: "Originals", icon: <Originals style={style} />, info: null }
+		{ title: "Em alta", icon: <Fire style={style} /> },
+		{ title: "Inscrições", icon: <Subs style={style} /> },
+		{ title: "Originals", icon: <Originals style={style} /> }
 	],
 	secundary: [
-		{ title: "Biblioteca", icon: <Library style={style} />, info: null },
-		{ title: "Histórico", icon: <MdHistory style={style} />, info: null },
+		{ title: "Biblioteca", icon: <Library style={style} /> },
+		{ title: "Histórico", icon: <MdHistory style={style} /> },
 		{
 			title: "Assistir mais tarde",
-			icon: <AiFillClockCircle style={style} />,
-			info: null
+			icon: <AiFillClockCircle style={style} />
 		},
-		{ title: "Compras", icon: <IoMdPricetag style={style} />, info: 1 },
+		{ title: "Compras", icon: <IoMdPricetag style={style} /> },
 		{
 			title: 'Vídeos marcados com "Gostei"',
-			icon: <Like style={style} />,
-			info: null
+			icon: <Like style={{ ...style, width: 40 }} />
 		},
 		{
 			title: "Mostrar mais",
-			icon: <IoIosArrowDown style={style} />,
-			info: null
+			icon: <IoIosArrowDown style={style} />
 		}
 	],
 	subscribers: [
@@ -60,6 +56,7 @@ export default {
 			title: "Cherry 葵",
 			icon: (
 				<img
+					style={{ ...style, borderRadius: "50%" }}
 					src="https://yt3.ggpht.com/a/AGF-l78CgLUmESUcuvNh1-3cLNbhKiSo2A_G_j8eyw=s288-c-k-c0xffffffff-no-rj-mo"
 					alt=""
 				/>
@@ -70,85 +67,82 @@ export default {
 			title: "JFlaMusic ♪",
 			icon: (
 				<img
+					style={{ ...style, borderRadius: "50%" }}
 					src="https://yt3.ggpht.com/a/AGF-l79w3oQTvVzbqRQKUEJ_teiEx8N0jQCFAjYwIg=s288-c-k-c0xffffffff-no-rj-mo"
 					alt=""
 				/>
-			),
-			info: null
+			)
 		},
 		{
 			title: "Syros",
 			icon: (
 				<img
+					style={{ ...style, borderRadius: "50%" }}
 					src="https://yt3.ggpht.com/a/AGF-l7-6YahiA6H436ZEtOsCJniDtMoY85Ppmox9LA=s288-c-k-c0xffffffff-no-rj-mo"
 					alt=""
 				/>
-			),
-			info: null
+			)
 		},
 		{
 			title: "Rocketseat",
 			icon: (
 				<img
+					style={{ ...style, borderRadius: "50%" }}
 					src="https://yt3.ggpht.com/a/AGF-l7_gRI0RdRC_VNg535o0C21ltP0eTFhi4rjRmw=s288-c-k-c0xffffffff-no-rj-mo"
 					alt=""
 				/>
-			),
-			info: null
+			)
 		},
 		{
 			title: "Love Aimer Forever",
 			icon: (
 				<img
+					style={{ ...style, borderRadius: "50%" }}
 					src="https://yt3.ggpht.com/a/AGF-l7-JtHzaPJtZ9QXydfMjNMVQse7e1OwM_63z2w=s288-c-k-c0xffffffff-no-rj-mo"
 					alt=""
 				/>
-			),
-			info: null
+			)
 		},
 		{
 			title: "Intoxi Anime",
 			icon: (
 				<img
+					style={{ ...style, borderRadius: "50%" }}
 					src="https://yt3.ggpht.com/a/AGF-l79lp5lrdKlTfk8uJLxYSmWuGqoX0JuW1-wLBg=s288-c-k-c0xffffffff-no-rj-mo"
 					alt=""
 				/>
-			),
-			info: null
+			)
 		},
 		{
 			title: "MrSuicideSheep",
 			icon: (
 				<img
+					style={{ ...style, borderRadius: "50%" }}
 					src="https://yt3.ggpht.com/a/AGF-l7968iZ3G3PUCj6VsF43y9o_wcDeEkab357QCA=s288-c-k-c0xffffffff-no-rj-mo"
 					alt=""
 				/>
-			),
-			info: null
+			)
 		},
 		{
 			title: "Mostrar mais 477",
-			icon: <IoIosArrowDown style={style} />,
-			info: null
+			icon: <IoIosArrowDown style={style} />
 		}
 	],
 	more: [
-		{ title: "YouTube Films", icon: <Film style={style} />, info: null },
-		{ title: "Jogos", icon: <Games style={style} />, info: null },
-		{ title: "Ao vivo", icon: <Live style={style} />, info: null }
+		{ title: "YouTube Films", icon: <Film style={style} /> },
+		{ title: "Jogos", icon: <Games style={style} /> },
+		{ title: "Ao vivo", icon: <Live style={style} /> }
 	],
 	others: [
-		{ title: "Configurações", icon: <Gear style={style} />, info: null },
+		{ title: "Configurações", icon: <Gear style={style} /> },
 		{
 			title: "Histórico de denúncias",
-			icon: <Flag style={style} />,
-			info: null
+			icon: <Flag style={style} />
 		},
-		{ title: "Ajuda", icon: <Help style={style} />, info: null },
+		{ title: "Ajuda", icon: <Help style={style} /> },
 		{
 			title: "Enviar feedback",
-			icon: <Feedback style={style} />,
-			info: null
+			icon: <Feedback style={style} />
 		}
 	]
 };

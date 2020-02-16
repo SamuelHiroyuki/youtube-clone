@@ -92,7 +92,7 @@ export const Button = styled.button`
 
 export const LogoConteiner = styled.div`
 	width: 110px;
-	height: 24px;
+	height: 21px;
 	position: relative;
 
 	& span {
