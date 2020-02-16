@@ -32,13 +32,13 @@ export default function Header() {
 			</form>
 
 			<div>
-				<Button width={40} flex>
+				<Button flex>
 					<GoDeviceCameraVideo size={16} color="#606060" />
 				</Button>
-				<Button width={40} flex>
+				<Button flex>
 					<MdApps size={24} color="#606060" />
 				</Button>
-				<Button width={40} flex>
+				<Button flex>
 					<AiFillBell size={22} color="#606060" />
 					<Badge>9+</Badge>
 				</Button>

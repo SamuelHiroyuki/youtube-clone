@@ -5,7 +5,7 @@ export const Container = styled.div`
 	padding: 0 16px;
 
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-between;
 	align-items: center;
 
 	& > div {
@@ -17,6 +17,7 @@ export const Container = styled.div`
 	& form {
 		position: relative;
 		width: 100%;
+		max-width: 640px;
 		height: 30px;
 		display: flex;
 		align-items: center;
@@ -29,16 +30,20 @@ export const Container = styled.div`
 			border: 1px solid #d3d3d3;
 			border-right: none;
 
-			::placeholder {
-				font-size: 16px;
-				font-weight: 400;
-				padding-left: 6px;
-			}
+			font-size: 16px;
+			font-weight: 400;
+			padding-left: 6px;
 		}
 
 		& input + svg {
 			position: absolute;
-			right: 80px;
+			right: 85px;
+			opacity: 0.7;
+			cursor: pointer;
+		}
+
+		& input + svg:hover {
+			opacity: 1;
 		}
 
 		button {
@@ -66,12 +71,14 @@ export const Container = styled.div`
 `;
 
 export const Button = styled.button`
-	width: ${({ width }) => `${width}px` || "auto"};
-	height: 25px;
+	width: 24px;
+	height: 24px;
 	border: none;
-	margin: 5px;
+	padding: 8px;
+	margin-right: 15px;
 	position: relative;
 	background-color: transparent;
+	box-sizing: content-box;
 	cursor: pointer;
 
 	${({ flex }) =>
@@ -84,15 +91,15 @@ export const Button = styled.button`
 `;
 
 export const LogoConteiner = styled.div`
-	width: 129px;
-	height: 21px;
+	width: 110px;
+	height: 24px;
 	position: relative;
 
 	& span {
 		color: #606060;
 		position: absolute;
 		top: 0;
-		right: 4px;
+		right: -5px;
 		font-size: 10px;
 	}
 `;
@@ -109,13 +116,13 @@ export const Badge = styled.div`
 	width: 18px;
 	height: 18px;
 	border-radius: 50%;
-	background-color: ${props => props.theme.primary};
+	background-color: #c00;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: #fff;
 	font-size: 10px;
 	position: absolute;
-	top: -5px;
-	right: -1px;
+	top: 4px;
+	right: 0px;
 `;
