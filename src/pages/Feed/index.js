@@ -4,12 +4,12 @@ import Header from "../../components/Header";
 import Sidebar from "../../components/Sidebar";
 
 export default function Feed() {
-	const [collapsed, setCollapsed] = useState(false);
+	const [expanded, setExpanded] = useState(false);
 
 	return (
 		<>
-			<Header setCollapsed={setCollapsed} />
-			<Sidebar collapsed={collapsed} setCollapsed={setCollapsed} />
+			<Header expanded={expanded} setExpanded={setExpanded} />
+			<Sidebar expanded={expanded} setExpanded={setExpanded} />
 		</>
 	);
 }

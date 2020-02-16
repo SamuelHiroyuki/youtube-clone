@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-	width: 72px;
+	width: ${({ expanded }) => (expanded ? "72px" : "72px")};
 	height: 100vh;
 `;
 

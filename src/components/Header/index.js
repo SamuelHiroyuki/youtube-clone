@@ -10,11 +10,11 @@ import avatar from "../../assets/images/avatar.png";
 
 import { Container, Button, LogoConteiner, Avatar, Badge } from "./styles";
 
-export default function Header() {
+export default function Header({ expanded, setExpanded }) {
 	return (
 		<Container>
 			<div>
-				<Button>
+				<Button onClick={() => setExpanded(!expanded)}>
 					<IoIosMenu size={26} />
 				</Button>
 				<LogoConteiner>
