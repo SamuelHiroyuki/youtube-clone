@@ -6,8 +6,8 @@ import { ReactComponent as Logo } from "../../assets/svgs/logo.svg";
 
 import { Container, Item, Button, LogoConteiner } from "./styles";
 
-export default function Sidebar() {
-	console.log(data);
+export default function Sidebar({ collapsed }) {
+	console.log(collapsed);
 	return (
 		<Container>
 			{/* <header>
